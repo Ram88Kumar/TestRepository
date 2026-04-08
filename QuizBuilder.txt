@@ -1,0 +1,23 @@
+function createAWSQuiz() {
+  // Update these two variables with the new data I give you
+  var quizTitle = 'AWS Startup Essentials Quiz'; 
+  var quizData = [ /* I will provide this part */ ];
+
+  var form = FormApp.create(quizTitle);
+  form.setIsQuiz(true);
+  
+  quizData.forEach(function(data) {
+    var item = form.addMultipleChoiceItem();
+    item.setTitle(data.q);
+    var choices = data.o.map(function(choice) {
+      return item.createChoice(choice, choice === data.a);
+    });
+    item.setChoices(choices).setPoints(1);
+    var feedback = FormApp.createFeedback().setText(data.f).build();
+    item.setFeedbackForCorrect(feedback);
+    item.setFeedbackForIncorrect(feedback);
+  });
+  
+  Logger.log('Form Created! Edit URL: ' + form.getEditUrl());
+  Logger.log('Shareable (Live) URL: ' + form.getPublishedUrl());
+}
