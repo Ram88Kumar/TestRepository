@@ -1,0 +1,13 @@
+Basics 1	- https://forms.gle/QnzGYCxDVRDP6Cxq7
+Basics 2	- https://forms.gle/sRYGJwxShE2SdZCB9
+Basics 3	- https://forms.gle/uEWFH2DdgeJcQ4di9
+IAM		- https://forms.gle/bfEHVUyCnHZsSM477
+Scenarios	- https://forms.gle/Hj3N1QpE6T5F869K9
+
+Compute 1 	- https://forms.gle/PNmRLSCLaXCA7iig9
+Compute 2 	- https://forms.gle/FKP2czopkFY1H9y19
+Compute 3 	- https://forms.gle/uKjsmvTxURuyGEtRA
+Elastic Bean 	- https://forms.gle/DPxa5KyxF2C3Q9Sq6
+
+icacls "test-key-pair.pem" /inheritance:r
+icacls "test-key-pair.pem" /grant:r "%username%":R
